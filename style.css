@@ -1,0 +1,30 @@
+.nav-bar {
+  margin: 0;
+  margin-top: -1vh;
+  width: 100vw;
+  height: 10vh;
+  background: linear-gradient(to right, rgb(0, 255, 105), rgb(8, 47, 13));
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info {
+  /* display: flex; */
+  margin-right: 20vw;
+}
+
+.product-image {
+  /* display: flex; */
+  margin-left: 20vw;
+  height: auto;
+  width: 20vh;
+}
+
+.image {
+  height: auto;
+  width: 40vh;
+}
