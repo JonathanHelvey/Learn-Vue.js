@@ -25,13 +25,21 @@
         <ul>
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
-
-        <div v-for="variant in variants" :key="variant.id">
-          <p>{{ variant.color }}</p>
+        <div class="sizes">
+          <div v-for="variant in variants" :key="variant.id">
+            <p @mouseover="updateProduct(variant.variantImage)">{{ variant.color }}</p>
+          </div>
         </div>
-        <div v-for="size in sizes">
-          <p>{{ size }}</p>
+        <div class="sizes" >
+          <ul v-for="size in sizes">
+            <li>{{ size }}</li>
+          </ul>
         </div>
+        <div class="cart-div">
+          <button class="addButton" v-on:click="addToCart">Add to Cart</button>
+          <p class="cart">Cart({{ cart }})</p>
+        </div>
+        <button class="removeButton" v-on:click="removeFromCart">Remove From Cart</button>
       </div>
     </div>
   </div>

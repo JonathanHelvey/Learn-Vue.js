@@ -10,17 +10,31 @@ var app = new Vue({
     variants: [
       {
         id: 123,
-        color: "green",
+        color: "blue",
+        variantImage: "./assets/socks1.jpg"
       },
       {
         id: 455,
         color: "red",
+        variantImage: "./assets/socks2.jpg"
       },
-      {
-        id: 333,
-        color: "black",
-      }
     ],
     sizes: ["SM", "MD", "LG", "XL"],
+    cart: 0,
+  },
+  methods: {
+    addToCart() {
+      this.cart += 1
+    },
+    removeFromCart() {
+      if(this.cart === 0) {
+        this.cart = 0
+      } else {
+        this.cart -= 1
+      }
+    },
+    updateProduct(variantImage) {
+      this.image = variantImage
+    }
   }
 })

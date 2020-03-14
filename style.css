@@ -28,3 +28,43 @@
   height: auto;
   width: 40vh;
 }
+
+.sizes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.addButton {
+  width: 10vw;
+  height: 10vh;
+  color: blue;
+  border-radius: 1rem;
+  outline: 0;
+  box-shadow: 1px 1px 1px #aaaaaa;
+  cursor: pointer;
+}
+
+.removeButton {
+  border: none;
+  color: blue;
+  cursor: pointer;
+}
+
+.cart {
+  width: 8vw;
+  align-items: center;
+  background-color: azure;
+  display: flex;
+  height: auto;
+  border: solid grey 2px;
+  color: rgb(40, 129, 32);
+  justify-content: center;
+}
+
